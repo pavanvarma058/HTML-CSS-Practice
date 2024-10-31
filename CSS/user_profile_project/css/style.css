@@ -1,0 +1,20 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-title {
+  text-align: center;
+}
+
+.bgc-green {
+  background-color: #0c5f01;
+  color: #fff;
+}
+
+.txt-color {
+  color: aqua;
+}
+
+.cross {
+  text-decoration-line: line-through;
+}
