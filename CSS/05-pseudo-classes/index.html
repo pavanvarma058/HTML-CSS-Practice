@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Pseudo Classes</title>
+    <style>
+      /* .submit:hover {
+          background-color: #e20909;
+      }
+
+      .submit:focus {
+          background-color: blue;
+      }
+
+      .name:hover {
+          background-color: purple;
+      }
+
+      .name:required {
+          background-color: yellow;
+      } */
+
+      span:first-child {
+        color: red;
+      }
+
+      span:last-child {
+        color: red;
+      }
+
+      span:nth-child(even) {
+        color: red;
+      }
+
+      span:first-of-type {
+        color: green;
+      }
+
+      span:last-of-type {
+        color: yellowgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <label>Email</label>
+      <input type="email" class="email" disabled />
+    </div>
+    <div>
+      <label>My Name Is</label>
+      <input type="text" class="name" required />
+    </div>
+    <button type="submit" class="submit">Send</button>
+
+    <br />
+    <br />
+
+    <div>
+      <div>Div</div>
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+      <span>5</span>
+    </div>
+    <div>
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+      <span>5</span>
+    </div>
+  </body>
+</html>

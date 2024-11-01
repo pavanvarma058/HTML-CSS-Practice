@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Specificity</title>
+    <style>
+      /*If there are two or more CSS rules that point to the same element, the selector with the highest specificity value will "win",
+       and its style declaration will be applied to that HTML element.
+      Think of specificity as a score/rank that determines which style declaration is ultimately applied to an element.*/
+
+      /*
+        0, 1, 0, 0
+        */
+      #heading {
+        background-color: #07a047;
+      }
+
+      /* 0, 0, 1, 0*/
+      .para {
+        background-color: #058096;
+        color: #000;
+      }
+
+      /*1, 0, 0, 1*/
+      p {
+        background-color: #b40d0d;
+        color: #fff !important;
+      }
+
+      p {
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading">Specificity</h1>
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam amet adipisci
+      exercitationem laboriosam doloremque quia reprehenderit saepe voluptates
+      voluptatibus, odit veritatis in quibusdam, quas blanditiis dolorum maxime
+      sapiente, vel deserunt ipsam asperiores consequuntur quo impedit? At
+      officia architecto veritatis voluptatibus magnam mollitia maiores
+      reiciendis labore!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, quis
+      tempora fugiat dolor ea aperiam cum aliquam blanditiis laboriosam
+      quibusdam.
+    </p>
+  </body>
+</html>
