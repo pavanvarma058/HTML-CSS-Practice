@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Units 1</title>
+    <style>
+      .parent {
+        width: 200px;
+        border: 1px solid black;
+        font-size: 30px;
+      }
+
+      .item {
+        background-color: red;
+        margin: 5px 0;
+      }
+
+      .item-rem {
+        font-size: 2rem; /* depends on root of the element*/
+      }
+
+      .item-em {
+        font-size: 2em; /* depends on parents font-size if element is placed under a another element*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="item item-rem">1 REM</div>
+    <div class="item item-em">1 EM</div>
+    <div class="parent">
+      <div class="item item-rem">1 REM</div>
+      <div class="item item-em">1 EM</div>
+    </div>
+  </body>
+</html>
