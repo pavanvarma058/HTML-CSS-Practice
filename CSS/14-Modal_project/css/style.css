@@ -8,7 +8,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #555;
+  background: #555;
 }
 
 .modal {
@@ -70,9 +70,9 @@ body {
 .btn {
   padding: 0.5rem 1rem;
   font-size: inherit;
-  border-radius: 0.3rem;
+  border-radius: 0.3em;
   border: none;
-  color: #fff;
+  color: white;
   cursor: pointer;
 }
 
