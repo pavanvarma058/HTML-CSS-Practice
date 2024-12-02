@@ -6,12 +6,12 @@ body {
   margin: 0;
 }
 
-.nav {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #242424;
-  color: white;
+  background-color: #91a7ff;
+  color: #212529;
   padding: 0 0.5rem;
 }
 
@@ -21,15 +21,15 @@ ul {
   margin: 0;
 }
 
-.link {
+ul li {
   padding: 0.5rem;
 }
 
-.link:hover {
-  background-color: #777;
+ul li a {
+  text-decoration: none;
+  color: #212529;
 }
 
-.link a {
-  text-decoration: none;
-  color: inherit;
+ul li a:hover {
+  background-color: #bac8ff;
 }

@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #212529;
+}
+
+.modal {
+  height: 80vh;
+  width: 900px;
+  max-width: 80%;
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  border-bottom: 1px solid #212529;
+  padding-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  align-self: flex-start;
+  padding-top: 0.5rem;
+}
+
+.body {
+  flex-grow: 1;
+  overflow: auto;
+  padding: 1rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+  border-top: 1px solid #212529;
+}
+
+.footer .btn {
+  margin-right: 0.5rem;
+}
+
+.footer .btn:last-child {
+  margin-right: initial;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: inherit;
+  border-radius: 0.3rem;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn.primary-btn {
+  background-color: #15aabf;
+}
+
+.btn.primary-btn:hover,
+.btn.primary-btn:focus {
+  background-color: #0b7285;
+}
+
+.btn.danger-btn {
+  background-color: #f03e3e;
+}
+
+.btn.danger-btn:hover,
+.btn.danger-btn:focus {
+  background-color: #c92a2a;
+}
