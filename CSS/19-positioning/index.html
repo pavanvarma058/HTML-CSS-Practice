@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positioning</title>
+    <style>
+      body {
+        height: 500vh;
+      }
+
+      .parent {
+        padding: 0.25rem;
+        background-color: lightskyblue;
+        position: relative;
+      }
+
+      .child1 {
+        position: sticky;
+        /*position: fixed;*/
+        /*position: absolute;*/
+        /*position: relative;*/
+        top: 20px;
+        padding: 0.25rem;
+        background-color: lightcoral;
+      }
+
+      .child2 {
+        padding: 0.25rem;
+        background-color: lightgreen;
+      }
+
+      .child3 {
+        padding: 0.25rem;
+        background-color: peru;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      Parent
+      <div class="child1">One</div>
+      <div class="child2">Two</div>
+      <div class="child3">Three</div>
+    </div>
+  </body>
+</html>
