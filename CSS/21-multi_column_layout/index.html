@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi Column Layout</title>
+    <style>
+      .parent {
+        height: 100vh;
+        column-width: 150px;
+        column-rule: 10px solid black;
+        column-count: 3;
+        column-gap: 40px; /*default: 1em*/
+        column-fill: auto; /*default: balance*/
+      }
+      /*h2 {
+        column-span: all;
+      }*/
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem
+      hic libero tempora!
+      <hr />
+      <!-- <h2>Header</h2> -->
+      Autem repellendus numquam, facere fuga ut ab earum voluptates porro, iure
+      qui non tempore, mollitia velit deleniti rerum?Lorem ipsum dolor sit amet
+      consectetur, adipisicing elit. Delectus ipsa recusandae pariatur non nobis
+      veritatis! Veniam culpa perspiciatis adipisci praesentium molestias
+      officia quidem cumque mollitia! Necessitatibus, alias. Quae, tenetur
+      quasi?
+      <hr />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eius
+      labore, enim mollitia esse, voluptate expedita nam corrupti voluptas ipsum
+      officiis aut odio nobis veritatis nemo reprehenderit voluptatum itaque
+      voluptatibus!
+    </div>
+  </body>
+</html>
