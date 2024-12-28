@@ -9,7 +9,7 @@
         font-family: Arial, Helvetica, sans-serif;
         margin: 0;
         padding: 0;
-        background-color: #212529;
+        background-color: #b2dfdb;
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -17,7 +17,7 @@
       }
 
       .login-form {
-        background-color: #034868;
+        background-color: #009688;
         padding: 30px;
         width: 300px;
         border-radius: 8px;
@@ -30,11 +30,11 @@
 
       h1 {
         text-align: center;
-        color: #fff;
+        color: #ffffff;
       }
 
       label {
-        color: white;
+        color: #ffffff;
       }
 
       input {
@@ -42,12 +42,12 @@
         padding: 5px;
         border-radius: 4px;
         border: 1px solid black;
-        background-color: rgb(203, 224, 231);
+        background-color: #fff;
       }
 
       button {
-        background-color: #1d749c;
-        color: #fff;
+        background-color: #009688;
+        color: #ffffff;
         padding: 10px;
         border-radius: 10px;
         cursor: pointer;
@@ -55,7 +55,7 @@
       }
 
       button:hover {
-        background-color: #032738;
+        background-color: #00796b;
       }
     </style>
   </head>
@@ -64,9 +64,15 @@
       <h1>Login</h1>
       <form class="form">
         <label for="Email">Email</label>
-        <input type="text" name="text" />
+        <input type="text" name="text" placeholder="Enter your email" />
         <label for="Password">Password</label>
-        <input type="password" name="password" required id="password" />
+        <input
+          type="password"
+          name="password"
+          required
+          id="password"
+          placeholder="Password"
+        />
         <button type="submit">Submit</button>
       </form>
     </div>
