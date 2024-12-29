@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calc Function</title>
+    <style>
+      h2 {
+        margin: 1rem;
+      }
+      /* The calc() function performs a calculation to be used as the property value. */
+      /* Required. A mathematical expression. The result will be used as the value.
+        The following operators can be used: + - * /  */
+
+      p {
+        --margin: 10;
+        margin: calc(var(--margin) * 2px);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Heading</h2>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+  </body>
+</html>

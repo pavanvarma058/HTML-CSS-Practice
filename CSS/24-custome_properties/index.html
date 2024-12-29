@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Properties</title>
+    <style>
+      :root {
+        --primary-color: darkorange;
+        --margin: 10px;
+      }
+
+      /* The var() function is used to insert the value of a CSS variable. */
+      /*A good way to use CSS variables is when it comes to the colors of your design. 
+      Instead of copy and paste the same colors over and over again, you can place them in variables.*/
+
+      h2 {
+        background-color: var(--primary-color);
+        margin: var(--margin);
+        color: white;
+        padding: 0.5rem;
+      }
+
+      p {
+        margin: var(--margin);
+        color: var(--primary-color);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Heading</h2>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <button>Click Me</button>
+
+    <script>
+      const button = document
+        .querySelector("button")
+        .addEventListener("click", () => {
+          /* console.log(
+            getComputedStyle(document.documentElement).getPropertyValue(
+              "--primary-color"
+            )
+          ); */
+
+          document.documentElement.style.setProperty("--primary-color", "red");
+        });
+    </script>
+  </body>
+</html>
