@@ -4,11 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advanced Selectors</title>
+    <style>
+      /* descendant selector */
+      /*
+      div span {
+        background-color: red;
+      }
+      */
+      /* child selector */
+      /*
+      div > span {
+        background-color: red;
+      }
+      */
+      /* General Sibling selector */
+      /*
+      div ~ span {
+        background-color: red;
+      }
+      */
+      /* Adjacent Sibling Selector */
+      /*
+      div + span {
+        background-color: red;
+      }
+      */
+      /* not selector */
+      /* p:not(.red):not(.green) {
+        background-color: blue;
+      }
+
+      input:not(:checked){
+        margin: 30px;
+      } */
+
+      /* Attribute Selector*/
+      input[data-margin] {
+        margin: 50px;
+      }
+    </style>
   </head>
   <body>
+    <input data-margin type="checkbox" />
     <h2>Heading</h2>
-    <p>Paragragh 1</p>
-    <p>Paragraph 2</p>
+    <p class="red">Paragragh 1</p>
+    <p class="green">Paragraph 2</p>
 
     <div>
       <span>
@@ -17,7 +57,7 @@
       </span>
     </div>
 
-    <p>Paragraph 3</p>
+    <p class="red">Paragraph 3</p>
     <p>Paragragh 4</p>
 
     <div>Div 2</div>
