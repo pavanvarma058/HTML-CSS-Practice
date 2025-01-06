@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Margins</title>
+    <style>
+      :root {
+        --width-or-height: 50px;
+      }
+
+      .div1 {
+        width: var(--width-or-height);
+        height: var(--width-or-height);
+        background-color: red;
+        opacity: 0.6;
+        margin: 0 auto;
+      }
+      .div2 {
+        width: var(--width-or-height);
+        height: var(--width-or-height);
+        background-color: blue;
+        opacity: 0.6;
+        margin-top: -20px;
+        margin-left: -5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+  </body>
+</html>
