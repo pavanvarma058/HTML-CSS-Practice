@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+    <style>
+      div {
+        font-weight: bold;
+        font-size: 400%;
+        color: green;
+      }
+
+      @media print {
+        div {
+          color: blue;
+        }
+      }
+      @media screen {
+        div {
+          color: blue;
+        }
+      }
+      @media all {
+        div {
+          color: blue;
+        }
+      }
+
+      @media all and (max-width: 700px) {
+        div {
+          color: red;
+        }
+      }
+
+      @media (orientation: landscape) {
+        div {
+          color: yellowgreen;
+        }
+      }
+
+      @media (min-width: 800px), (max-width: 1000px) {
+        div {
+          color: brown;
+        }
+      }
+      @media (min-width: 800px) and (max-width: 1000px) {
+        div {
+          color: brown;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div">Div</div>
+  </body>
+</html>
