@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition Property</title>
+    <style>
+      div {
+        background-color: red;
+        height: 100px;
+        width: 100px;
+        color: white;
+        /*transition: property duration timing func delay*/
+        /*transition: all 1s linear 0.5s;*/
+        transition: color 1s, background-color 5s;
+      }
+
+      div:hover {
+        background-color: green;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Div</div>
+  </body>
+</html>
