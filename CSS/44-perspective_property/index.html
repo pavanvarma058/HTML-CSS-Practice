@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perspective</title>
+    <style>
+      body {
+        display: flex;
+        flex-wrap: wrap;
+        perspective: 100px;
+
+        perspective-origin: center;
+      }
+      /*Perspective property is used to tells how far are we from the object or screen,
+        if the given value is higher then we are very far away from the screen
+        if the given value is lower then we are very close to the screen*/
+      div {
+        background-color: red;
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+
+        transform: rotateX(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </body>
+</html>
