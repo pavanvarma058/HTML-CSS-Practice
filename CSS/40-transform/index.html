@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform Property</title>
+    <style>
+      .div {
+        background-color: red;
+        height: 100px;
+        width: 100px;
+        color: white;
+        animation-name: custom;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-delay: 0.5s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        /*
+        transform: scale(1, 1.25);
+        transform: scaleX(1) scaleY(1.25);
+
+        transform: rotate(180deg); .45turn or .65rad  
+
+        transform: translate(100px, 50px);  X, Y
+
+        */
+
+        /*width: 50%; */
+        /*
+        transform: translate(
+          100%
+        ); /*what it does is it translates based on its own size*/
+      }
+
+      .div:hover {
+        animation-play-state: paused;
+      }
+
+      @keyframes custom {
+        from {
+          transform: translateX(0) scale(1.5);
+        }
+
+        to {
+          transform: translateX(100%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div">Div</div>
+    <div>Div</div>
+    <div>Div</div>
+    <div>Div</div>
+    <div>Div</div>
+  </body>
+</html>
