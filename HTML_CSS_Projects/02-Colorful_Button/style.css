@@ -45,6 +45,7 @@ body {
   padding: 1em 1.5em;
   font-family: inherit;
   letter-spacing: 0.1em;
+  cursor: pointer;
 }
 
 .button-border:hover {
